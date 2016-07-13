@@ -68,10 +68,10 @@
                             <div class="col-md-2">
                                 <div class="list-group text-center" >
                                     <a href="registroProveedor.php" class="list-group-item active">Proveedores</a>
-                                    <a href="#" class="list-group-item">Categorias</a>
+                                    <a href="registroCategoria.php" class="list-group-item">Categorias</a>
                                     <a href="registroProducto.php" class="list-group-item">Productos</a>
-                                    <a href="#" class="list-group-item">Productos Producidos</a>
-                                    <a href="registroUsuario.php" class="list-group-item">Usuarios</a>
+                                    <a href="registroProdProducido.php" class="list-group-item">Productos Producidos</a>
+                                    <a href="registroUsuario.php" class="list-group-item ">Usuarios</a>
                                 </div>
                             </div>
 

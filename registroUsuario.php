@@ -68,7 +68,7 @@
                             <div class="col-md-2">
                                 <div class="list-group text-center" >
                                     <a href="registroProveedor.php" class="list-group-item">Proveedores</a>
-                                    <a href="registroCategoria" class="list-group-item">Categorias</a>
+                                    <a href="registroCategoria.php" class="list-group-item">Categorias</a>
                                     <a href="registroProducto.php" class="list-group-item">Productos</a>
                                     <a href="registroProdProducido.php" class="list-group-item">Productos Producidos</a>
                                     <a href="registroUsuario.php" class="list-group-item active">Usuarios</a>
@@ -147,6 +147,7 @@
                                                    <select class='form-control' name='area' id='area' required="">
                                                          <option value="">Seleccione...</option>
                                                          <option value="Administracion">Administración</option>
+                                                         <option value="Almacen">Almacén</option>
                                                          <option value="Bar">Bar</option>
                                                          <option value="Brasa">Brasa</option>
                                                          <option value="Ensaladas">Ensaladas</option>

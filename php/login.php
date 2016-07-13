@@ -23,7 +23,8 @@ if(!isset($_SESSION['userid']))
 {
        if(verificar_login($_POST['usuario'],$_POST['contraseña']) == 1)
         {
-          
+        
+           
            $_SESSION['logged']='yes'; 
            
             header("location:../indexIntranet.php");

@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Registro Producto</title>
+        <title>Registro Req. Tienda</title>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link href="css/templateFooter.css" rel="stylesheet">
         <link href="css/template.css" rel="stylesheet">
@@ -37,10 +37,10 @@
                             <nav class="navbar-collapse collapse in" aria-expanded="false" style="height: 1px;">
                                 <ul class="nav navbar-nav nav-bar-right">
 
-                                    <li class="active">
+                                    <li>
                                         <a href="indexMantenimiento.php">Mantenimiento</a>
                                     </li>
-                                    <li>
+                                    <li class="active">
                                        <a href="indexControl.php">Control</a>
                                     </li>
                                     <li>
@@ -69,18 +69,17 @@
                                 <div class="list-group text-center" >
                                     <a href="registroProveedor.php" class="list-group-item">Proveedores</a>
                                     <a href="registroCategoria.php" class="list-group-item">Categorias</a>
-                                    <a href="registroProducto.php" class="list-group-item active">Productos</a>
+                                    <a href="registroProducto.php" class="list-group-item">Productos</a>
                                     <a href="registroProdProducido.php" class="list-group-item">Productos Producidos</a>
-                                    <a href="registroUsuario.php" class="list-group-item ">Usuarios</a>
+                                    <a href="registroUsuario.php" class="list-group-item active">Usuarios</a>
                                 </div>
-
                             </div>
 
 
                             <div class="col-md-8"style="position: relative; left: 50px">
-                                <h2 class="text-center">Registro de Productos</h2>
+                                <h2 class="text-center">Registro de Usuarios</h2>
                                 <br>
-                                <h4>Datos del Producto</h4>
+                                <h4>Datos del Usuario</h4>
 
                                 
                                 <form  action="/php/registrarUsuario.php" method="post" class="form-horizontal" role="form" name="formulario" id="formulario">
