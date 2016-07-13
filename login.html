@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+
+    <title>Inicio de Sesion</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+     <script src="js/jquery.js" ></script>
+     <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>   
+  </head>
+
+  <body>
+
+    <div class="container">
+       <div class="cuadro">
+      <form action="php/login.php" method="post"class="form-signin" role="form">
+        <img src="img/logo.png" alt="Logo" width="180" height="180">
+       <!-- <h3 class="form-signin-heading">Intranet de Katy Figura</h3>-->
+        <label for="inputEmail" class="sr-only">Usuario</label>
+        <input type="user" name="usuario" class="form-control" placeholder="Usuario" required autofocus>
+
+        <label for="inputPassword" class="sr-only">Contraseña</label>
+        <input type="password" name="contraseña" class="form-control" placeholder="Contraseña" required>
+        
+        <button class="btn btn-lg btn-primary btn-block" type="submit"><span class="glyphicon glyphicon-ok-sign"></span>Acceder</button>
+      </form>
+      </div>
+    </div> <!-- /container -->
+
+
+   
+  </body>
+</html>
