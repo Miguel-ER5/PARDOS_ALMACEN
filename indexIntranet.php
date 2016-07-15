@@ -38,7 +38,7 @@
                                         <a href="registroUsuario.php">Mantenimiento</a>
                                     </li>
                                     <li>
-                                       <a href="indexControl.php">Control</a>
+                                        <a href="control_ReqTienda.php">Control</a>
                                     </li>
                                     <li>
                                        <a href="indexReportes.php">Reportes</a> 

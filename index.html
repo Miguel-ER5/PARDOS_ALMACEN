@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<title>RMA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+<link rel="stylesheet" href="css/matrix-style.css">
+<link rel="stylesheet" href="css/matrix-media.css">
+<link href="css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" href="css/fullcalendar.css"> 
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+
+</head>
+<body>
+
+<!--Header-part-->
+<div id="header">
+  <h1><a href="">RMA</a></h1>
+</div>
+<!--close-Header-part--> 
+
+<!--top-Header-menu-->
+<div id="user-nav" class="navbar navbar-inverse">
+  <ul class="nav" style="width: auto; margin: 0px;">
+   
+    <li class=""><a title="" href="http://reparacionesyservicios.hol.es/rma/index.php/mapos/minhaConta"><i class="icon icon-star"></i> <span class="text">Mi Cuenta</span></a></li>
+    <li class=""><a title="" href="http://reparacionesyservicios.hol.es/rma/index.php/mapos/sair"><i class="icon icon-share-alt"></i> <span class="text">Sair del Sistema</span></a></li>
+  </ul>
+</div>
+
+<!--start-top-serch-->
+<div id="search">
+  <form action="http://reparacionesyservicios.hol.es/rma/index.php/mapos/pesquisar">
+    <input type="text" name="termo" placeholder="Buscar...">
+    <button type="submit" class="tip-bottom" data-original-title="Buscar"><i class="icon-search icon-white"></i></button>
+    
+  </form>
+</div>
+<!--close-top-serch--> 
+
+<!--sidebar-menu-->
+
+<div id="sidebar"> <a href="#" class="visible-phone"><i class="icon icon-list"></i> Menu</a>
+  <ul style="display: block;">
+
+
+    <li class="active"><a href="http://reparacionesyservicios.hol.es/rma/"><i class="icon icon-home"></i> <span>Dashboard</span></a></li>
+    
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/clientes"><i class="icon icon-group"></i> <span>Clientes</span></a></li>
+        
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/produtos"><i class="icon icon-barcode"></i> <span>Productos</span></a></li>
+        
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/servicos"><i class="icon icon-wrench"></i> <span>Servicios</span></a></li>
+    
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/os"><i class="icon icon-tags"></i> <span>Ordenes de Servicio</span></a></li>
+    
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/vendas"><i class="icon icon-shopping-cart"></i> <span>Ventas</span></a></li>
+        
+            <li class=""><a href="http://reparacionesyservicios.hol.es/rma/index.php/arquivos"><i class="icon icon-hdd"></i> <span>Archivos</span></a></li>
+    
+            <li class="submenu ">
+          <a href="#"><i class="icon icon-money"></i> <span>Finanzas</span> <span class="label"><i class="icon-chevron-down"></i></span></a>
+          <ul>
+            <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/financeiro/lancamentos">Movimientos</a></li>
+          </ul>
+        </li>
+    
+            
+        <li class="submenu ">
+          <a href="#"><i class="icon icon-list-alt"></i> <span>Informes</span> <span class="label"><i class="icon-chevron-down"></i></span></a>
+          <ul>
+
+                            <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/clientes">Clientes</a></li>
+                                        <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/produtos">Productos</a></li>
+                                        <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/servicos">Servicios</a></li>
+                                         <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/os">Ordenes de Servicio</a></li>
+                                        <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/vendas">Ventas</a></li>
+                                        <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/relatorios/financeiro">Financieros</a></li>
+                        
+          </ul>
+        </li>
+
+    
+            <li class="submenu ">
+          <a href="#"><i class="icon icon-cog"></i> <span>Configuraciones</span> <span class="label"><i class="icon-chevron-down"></i></span></a>
+          <ul>
+                                        <li><a href="http://reparacionesyservicios.hol.es/rma/index.php/mapos/emitente">Empresa</a></li>
+                                     
+          </ul>
+        </li>
+        
+    
+  </ul>
+</div>
+<div id="content">
+  <div id="content-header">
+    <div id="breadcrumb"> <a href="http://reparacionesyservicios.hol.es/rma/" class="tip-bottom" data-original-title="Dashboard"><i class="icon-home"></i> Dashboard</a> <a href="http://reparacionesyservicios.hol.es/rma/index.php/mapos" class="tip-bottom" data-original-title="Mapos">Mapos</a>  </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span12">
+          
+                                                
+                      <!--[if lt IE 9]><script language="javascript" type="text/javascript" src="http://reparacionesyservicios.hol.es/rma/js/dist/excanvas.min.js"></script><![endif]-->
+
+<script language="javascript" type="text/javascript" src="http://reparacionesyservicios.hol.es/rma/js/dist/jquery.jqplot.min.js"></script>
+<link rel="stylesheet" type="text/css" href="http://reparacionesyservicios.hol.es/rma/js/dist/jquery.jqplot.min.css">
+
+<script type="text/javascript" src="http://reparacionesyservicios.hol.es/rma/js/dist/plugins/jqplot.pieRenderer.min.js"></script>
+<script type="text/javascript" src="http://reparacionesyservicios.hol.es/rma/js/dist/plugins/jqplot.donutRenderer.min.js"></script>
+
+<!--Action boxes-->
+  <div class="container-fluid">
+    <div class="quick-actions_homepage">
+      <ul class="quick-actions">
+                    <li class="bg_lb"> <a href="http://reparacionesyservicios.hol.es/rma/index.php/clientes"> <i class="icon-group"></i> Clientes</a> </li>
+                            <li class="bg_lg"> <a href="http://reparacionesyservicios.hol.es/rma/index.php/produtos"> <i class="icon-barcode"></i> Productos</a> </li>
+                            <li class="bg_ly"> <a href="http://reparacionesyservicios.hol.es/rma/index.php/servicos"> <i class="icon-wrench"></i> Servicios</a> </li>
+                            <li class="bg_lo"> <a href="http://reparacionesyservicios.hol.es/rma/index.php/os"> <i class="icon-tags"></i> OS</a> </li>
+                            <li class="bg_ls"> <a href="http://reparacionesyservicios.hol.es/rma/index.php/vendas"><i class="icon-shopping-cart"></i> Ventas</a></li>
+        
+        
+        
+        
+        
+        
+
+      </ul>
+    </div>
+  </div>  
+<!--End-Action boxes-->  
+
+
+
+<div class="row-fluid" style="margin-top: 0">
+    
+    <div class="span12">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Produtos Con Stock Mínimo</h5></div>
+            <div class="widget-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Producto</th>
+                            <th>Precio de Venta</th>
+                            <th>Stock</th>
+                            <th>Stock Mínimo</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>21</td><td>Tomografo</td><td>€ 0.00</td><td>0</td><td>0</td><td><a href="http://reparacionesyservicios.hol.es/rma/index.php/produtos/editar/21" class="btn btn-info"> <i class="icon-pencil"></i> </a>  </td></tr><tr><td>23</td><td>hdasd</td><td>€ 2.34</td><td>12</td><td>67</td><td><a href="http://reparacionesyservicios.hol.es/rma/index.php/produtos/editar/23" class="btn btn-info"> <i class="icon-pencil"></i> </a>  </td></tr>                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="span12" style="margin-left: 0">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Ordenes de Servcio Abiertas</h5></div>
+            <div class="widget-content">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Fecha Inicial</th>
+                            <th>Fecha Final</th>
+                            <th>Cliente</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>33</td><td>25/11/2015</td><td>27/11/2015</td><td>francisco jose rico</td><td><a href="http://reparacionesyservicios.hol.es/rma/index.php/os/visualizar/33" class="btn"> <i class="icon-eye-open"></i> </a> </td></tr><tr><td>38</td><td>01/12/2015</td><td>24/12/2015</td><td>francisco jose rico</td><td><a href="http://reparacionesyservicios.hol.es/rma/index.php/os/visualizar/38" class="btn"> <i class="icon-eye-open"></i> </a> </td></tr>                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="row-fluid" style="margin-top: 0">
+
+    <div class="span4">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Estadísticas Financeiras/Realizado</h5></div>
+            <div class="widget-content">
+                <div class="row-fluid">
+                    <div class="span12">
+                      <div id="chart-financeiro" style="position: relative; height: 300px;" class="jqplot-target"><canvas width="260" height="300" class="jqplot-base-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="jqplot-title" style="height: 0px; width: 0px;"></div><canvas width="260" height="300" class="jqplot-grid-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><canvas width="240" height="267" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="240" height="267" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><table class="jqplot-table-legend" style="position: absolute; right: 10px; top: 107.5px;"><tbody><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0px;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(154, 205, 50); background-color: rgb(154, 205, 50);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0px;">Total Ingresos</td></tr><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0.5em;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(255, 140, 0); background-color: rgb(255, 140, 0);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0.5em;">Total Gastos</td></tr></tbody></table><canvas width="240" height="267" class="jqplot-pieRenderer-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 36px; top: 134px;">26105</div><canvas width="240" height="267" class="jqplot-event-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas></div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="span4">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Estadísticas Financeiras/Pendiente</h5></div>
+            <div class="widget-content">
+                <div class="row-fluid">
+                    <div class="span12">
+                      <div id="chart-financeiro2" style="position: relative; height: 300px;" class="jqplot-target"><canvas width="260" height="300" class="jqplot-base-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="jqplot-title" style="height: 0px; width: 0px;"></div><canvas width="260" height="300" class="jqplot-grid-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><canvas width="240" height="267" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="240" height="267" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><table class="jqplot-table-legend" style="position: absolute; right: 10px; top: 107.5px;"><tbody><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0px;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(144, 238, 144); background-color: rgb(144, 238, 144);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0px;">Total Ingresos</td></tr><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0.5em;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(255, 0, 0); background-color: rgb(255, 0, 0);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0.5em;">Total Gastos</td></tr></tbody></table><canvas width="240" height="267" class="jqplot-pieRenderer-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 46px; top: 152px;">2106</div><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 88px; top: 115px;">650</div><canvas width="240" height="267" class="jqplot-event-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas></div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="span4">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Total en Caja/Previsto</h5></div>
+            <div class="widget-content">
+                <div class="row-fluid">
+                    <div class="span12">
+                      <div id="chart-financeiro-caixa" style="position: relative; height: 300px;" class="jqplot-target"><canvas width="260" height="300" class="jqplot-base-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="jqplot-title" style="height: 0px; width: 0px;"></div><canvas width="260" height="300" class="jqplot-grid-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><canvas width="240" height="267" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="240" height="267" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><table class="jqplot-table-legend" style="position: absolute; right: 10px; top: 107.5px;"><tbody><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0px;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(131, 149, 87); background-color: rgb(131, 149, 87);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0px;">Total en Caja</td></tr><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0.5em;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(216, 184, 63); background-color: rgb(216, 184, 63);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0.5em;">Total a Entrar</td></tr></tbody></table><canvas width="240" height="267" class="jqplot-pieRenderer-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 36px; top: 138px;">26094</div><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 93px; top: 129px;">1456</div><canvas width="240" height="267" class="jqplot-event-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas></div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row-fluid" style="margin-top: 0">
+
+    <div class="span12">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Estadísticas de OS</h5></div>
+            <div class="widget-content">
+                <div class="row-fluid">
+                    <div class="span12">
+                      <div id="chart-os" style="position: relative; height: 300px;" class="jqplot-target"><canvas width="883" height="300" class="jqplot-base-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><div class="jqplot-title" style="height: 0px; width: 0px;"></div><canvas width="883" height="300" class="jqplot-grid-canvas" style="position: absolute; left: 0px; top: 0px;"></canvas><canvas width="863" height="267" class="jqplot-series-shadowCanvas" style="position: absolute; left: 10px; top: 10px;"></canvas><canvas width="863" height="267" class="jqplot-series-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><table class="jqplot-table-legend" style="position: absolute; right: 10px; top: 107.5px;"><tbody><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0px;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(75, 178, 197); background-color: rgb(75, 178, 197);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0px;">Abierto</td></tr><tr class="jqplot-table-legend"><td class="jqplot-table-legend jqplot-table-legend-swatch" style="text-align: center; padding-top: 0.5em;"><div class="jqplot-table-legend-swatch-outline"><div class="jqplot-table-legend-swatch" style="border-color: rgb(234, 162, 40); background-color: rgb(234, 162, 40);"></div></div></td><td class="jqplot-table-legend jqplot-table-legend-label" style="padding-top: 0.5em;">Presupuesto</td></tr></tbody></table><canvas width="863" height="267" class="jqplot-pieRenderer-highlight-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 353px; top: 186px;">67%</div><div class="jqplot-pie-series jqplot-data-label" style="position: absolute; left: 415px; top: 81px;">33%</div><canvas width="863" height="267" class="jqplot-event-canvas" style="position: absolute; left: 10px; top: 10px;"></canvas></div>
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row-fluid" style="margin-top: 0">
+
+    <div class="span12">
+        
+        <div class="widget-box">
+            <div class="widget-title"><span class="icon"><i class="icon-signal"></i></span><h5>Estadísticas del Sistema</h5></div>
+            <div class="widget-content">
+                <div class="row-fluid">           
+                    <div class="span12">
+                        <ul class="site-stats">
+                            <li class="bg_lh"><i class="icon-group"></i> <strong>1</strong> <small>Clientes</small></li>
+                            <li class="bg_lh"><i class="icon-barcode"></i> <strong>7</strong> <small>Productos </small></li>
+                            <li class="bg_lh"><i class="icon-tags"></i> <strong>3</strong> <small>Ordenes de Servicio</small></li>
+                            <li class="bg_lh"><i class="icon-wrench"></i> <strong>5</strong> <small>Servicios</small></li>
+                            
+                        </ul>
+                 
+                    </div>
+            
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="http://reparacionesyservicios.hol.es/rma/js/bootstrap.min.js"></script>
+
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+      var data = [
+        ['Abierto', 2],['Presupuesto', 1],       
+      ];
+      var plot1 = jQuery.jqplot ('chart-os', [data], 
+        { 
+          seriesDefaults: {
+            // Make this a pie chart.
+            renderer: jQuery.jqplot.PieRenderer, 
+            rendererOptions: {
+              // Put data labels on the pie slices.
+              // By default, labels show the percentage of the slice.
+              showDataLabels: true
+            }
+          }, 
+          legend: { show:true, location: 'e' }
+        }
+      );
+
+    });
+ 
+</script>
+
+
+
+
+<script type="text/javascript">
+    
+    $(document).ready(function(){
+
+      var data2 = [['Total Ingresos',26105.22],['Total Gastos', 11.1]];
+      var plot2 = jQuery.jqplot ('chart-financeiro', [data2], 
+        {  
+
+          seriesColors: [ "#9ACD32", "#FF8C00", "#EAA228", "#579575", "#839557", "#958c12","#953579", "#4b5de4", "#d8b83f", "#ff5800", "#0085cc"],   
+          seriesDefaults: {
+            // Make this a pie chart.
+            renderer: jQuery.jqplot.PieRenderer, 
+            rendererOptions: {
+              // Put data labels on the pie slices.
+              // By default, labels show the percentage of the slice.
+              dataLabels: 'value',
+              showDataLabels: true
+            }
+          }, 
+          legend: { show:true, location: 'e' }
+        }
+      );
+
+
+      var data3 = [['Total Ingresos',2105.55],['Total Gastos', 650]];
+      var plot3 = jQuery.jqplot ('chart-financeiro2', [data3], 
+        {  
+
+          seriesColors: [ "#90EE90", "#FF0000", "#EAA228", "#579575", "#839557", "#958c12","#953579", "#4b5de4", "#d8b83f", "#ff5800", "#0085cc"],   
+          seriesDefaults: {
+            // Make this a pie chart.
+            renderer: jQuery.jqplot.PieRenderer, 
+            rendererOptions: {
+              // Put data labels on the pie slices.
+              // By default, labels show the percentage of the slice.
+              dataLabels: 'value',
+              showDataLabels: true
+            }
+          }, 
+          legend: { show:true, location: 'e' }
+        }
+
+      );
+
+
+      var data4 = [['Total en Caja',26094.12],['Total a Entrar', 1455.55]];
+      var plot4 = jQuery.jqplot ('chart-financeiro-caixa', [data4], 
+        {  
+
+          seriesColors: ["#839557","#d8b83f", "#d8b83f", "#ff5800", "#0085cc"],   
+          seriesDefaults: {
+            // Make this a pie chart.
+            renderer: jQuery.jqplot.PieRenderer, 
+            rendererOptions: {
+              // Put data labels on the pie slices.
+              // By default, labels show the percentage of the slice.
+              dataLabels: 'value',
+              showDataLabels: true
+            }
+          }, 
+          legend: { show:true, location: 'e' }
+        }
+
+      );
+
+
+    });
+ 
+</script>
+
+
+
+      </div>
+    </div>
+  </div>
+</div>
+<!--Footer-part-->
+<div class="row-fluid">
+  <div id="footer" class="span12"> 2015 © RMA</div>
+</div>
+<!--end-Footer-part-->
+
+
+<script src="http://reparacionesyservicios.hol.es/rma/assets/js/bootstrap.min.js"></script> 
+<script src="http://reparacionesyservicios.hol.es/rma/assets/js/matrix.js"></script> 
+
+
+
+
+
+
+
+
+
+
+
+</body></html>
