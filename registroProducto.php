@@ -38,7 +38,7 @@
                                 <ul class="nav navbar-nav nav-bar-right">
 
                                     <li class="active">
-                                        <a href="indexMantenimiento.php">Mantenimiento</a>
+                                        <a href="registroProducto.php">Mantenimiento</a>
                                     </li>
                                     <li>
                                        <a href="indexControl.php">Control</a>
@@ -83,13 +83,13 @@
                                 <h4>Datos del Producto</h4>
 
                                 
-                                <form  action="/php/registrarUsuario.php" method="post" class="form-horizontal" role="form" name="formulario" id="formulario">
+                                <form  action="/php/registrarProducto.php" method="post" class="form-horizontal" role="form" name="formulario" id="formulario">
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label  class="control-label">DNI *</label>
+                                                <label  class="control-label">Producto *</label>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" name="dni" id="dni" placeholder="DNI..." required="" style="width:300px; left:18px">
+                                                    <input type="text" class="form-control" name="nombreprod" id="nombreprod" placeholder="Producto..." required="" style="width:300px; left:18px">
                                                         <span class="input-group-btn" style="left:-15px">
                                                             <button class="btn btn-default" name="buscar" id="buscar" type="button">Buscar</button>
                                                         </span>
@@ -100,9 +100,9 @@
 
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="usuario" class="control-label">Nombre *</label>
+                                                <label for="usuario" class="control-label">Stock Mínimo *</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre..." required="">
+                                                    <input type="number" class="form-control" name="stockmin" id="stockmin" placeholder="Stock Mínimo..." min="0" max="500" required="">
                                                 </div>
                                             </div>
                                         </div>
@@ -110,70 +110,91 @@
                                     <br>
                                     <div class="row">
                                         <div class="col-md-6">
-                                        <div class="form-group">
-                                                <label for="contraseña" class="control-label">Apellidos *</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" name="apellidos" id="apellidos" placeholder="Apellidos..." required="">
-                                                </div>
-                                            </div>   
-                                        
-                                        </div>
-
-                                        <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="email" class="control-label">Dirección *</label>
+                                                <label for="email" class="control-label">Unidad de Medida *</label>
                                                 <div class="col-sm-12">
-                                                    <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Dirección..." required="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div> 
-                                    <br>
-                                       <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="nombre" class="control-label">Telefono *</label>
-                                                <div class="col-sm-12">
-                                                    <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Telefono..." required="">
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="email" class="control-label">Area *</label>
-                                                <div class="col-sm-12">
-                                                   <select class='form-control' name='area' id='area' required="">
+                                                   <select class='form-control' name='unidadmedida' id='unidadmedida' required="">
                                                          <option value="">Seleccione...</option>
-                                                         <option value="Administracion">Administración</option>
-                                                         <option value="Bar">Bar</option>
-                                                         <option value="Brasa">Brasa</option>
-                                                         <option value="Ensaladas">Ensaladas</option>
-                                                         <option value="Frituras">Frituras</option>
-                                                         <option value="Mantenimiento">Mantenimiento</option>
-                                                         <option value="Parrilla">Parrilla</option>
-                                                         <option value="Salon">Salón</option>
+                                                         <option value="Litro">L</option>
+                                                         <option value="Kilogramo">kg</option>
+                                                         <option value="Gramo">g</option>
+                                                         <option value="Unidad">unidad</option>                                                 
                                                    </select>
                                                 </div>
                                             </div>
 
                                         </div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="control-label">Tiempo de Vida *</label>
+                                                <div class="col-sm-12">
+                                                    <input type="number" class="form-control" name="tiempovida" id="tiempovida" placeholder="Días..." min="1" max="90" required="">
+                                                </div>
+                                            </div>
+
+                                        </div>
                                     </div> 
                                     <br>
                                        <div class="row">
+                                           <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="control-label">¿Es Ingrediente? *</label>
+                                                <div class="col-sm-12">
+                                                   <select class='form-control' name='ingrediente' id='ingrediente' required="">
+                                                         <option value="">Seleccione...</option>
+                                                         <option value="Si">Sí</option>
+                                                         <option value="No">No</option>                                                       
+                                                   </select>
+                                                </div>
+                                            </div>
+
+                                        </div>
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="nombre" class="control-label">Contaseña *</label>
+                                                <label for="nombre" class="control-label">Proveedor *</label>
                                                 <div class="col-sm-12">
-                                                    <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Constraseña..." required="">
+                                                    <input type="text" class="form-control" name="proveedor" id="proveedor" placeholder="Proveedor..." required="">
                                                 </div>
                                             </div>
 
                                         </div>
 
+                                        
                                     </div> 
+                                    <br>
+                                       <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="nombre" class="control-label">Categoría *</label>
+                                                <div class="col-sm-12">
+                                                    <input type="text" class="form-control" name="categoria" id="categoria" placeholder="Categoría..." required="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                            <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="nombre" class="control-label">Descripción *</label>
+                                                <div class="col-sm-12">
+                                                    <textarea type="text" class="form-control" name="descripcion" id="descripcion"  placeholder="Agregue Descripción..." rows="3" cols="50">
+                                                    </textarea>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div> 
+                                    <div class="row">
+                                        <div hidden="" class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email" class="control-label">Stock *</label>
+                                                <div class="col-sm-12">
+                                                    <input type="number" class="form-control" name="stock" id="stock"  value="0" required="">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                     <br>
                                     <div class="row">
                                         <div class="col-md-4">
@@ -239,13 +260,15 @@
  function habilitarInput(){
      //formulario.dni.disabled = true;
      //formulario.buscar.disabled = true;
-       formulario.nombre.disabled = false;
-       formulario.apellidos.disabled = false;
-       formulario.direccion.disabled = false;
-       formulario.telefono.disabled = false;
-       formulario.area.disabled = false;
-       formulario.contrasena.disabled = false;
-       document.formulario.action = "/php/modificarUsuario.php";
+       formulario.nombreprod.disabled = false;
+       formulario.stockmin.disabled = false;
+       formulario.unidadmedida.disabled = false;
+       formulario.tiempovida.disabled = false;
+       formulario.ingrediente.disabled = false;
+       formulario.proveedor.disabled = false;
+       formulario.categoria.disabled = false;
+       formulario.descripcion.disabled = false;
+       document.formulario.action = "/php/modificarProducto.php";
        
       // document.getElementById("formulario").submit();
  }

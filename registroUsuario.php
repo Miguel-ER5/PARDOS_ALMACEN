@@ -165,7 +165,7 @@
                                        <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group">
-                                                <label for="nombre" class="control-label">Contaseña *</label>
+                                                <label for="nombre" class="control-label">Contraseña *</label>
                                                 <div class="col-sm-12">
                                                     <input type="password" class="form-control" name="contrasena" id="contrasena" placeholder="Constraseña..." required="">
                                                 </div>

@@ -4,7 +4,7 @@ function conectar()
 {
     $servidor='localhost';
     $user='root';
-    $pass='admin';
+    $pass='mysql';
     $name='almacenpardos';
    $con= @mysql_connect($servidor,$user,$pass);
    @mysql_select_db($name, $con);
